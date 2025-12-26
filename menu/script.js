@@ -9,7 +9,7 @@ image: "materials/images/food1.png"
 name: "JUMBO CRAB SHRIMP",
 price: "$24.00",
 description: "Lorem ipsum dolor sit amet consectetur adipisicingelit. At, explicabo.",
-image: "./images/food2.png"
+image: "materials/images/food2.png"
 },
 {
 name: "KOKTAIL JUICE",
