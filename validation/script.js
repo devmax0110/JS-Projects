@@ -1,21 +1,16 @@
 document.getElementById("contactForm").addEventListener("submit", function (e) {
 e.preventDefault();
 
-// Get input values
 var name = document.getElementById("name").value.trim();
 var email = document.getElementById("email").value.trim();
 var subject = document.getElementById("subject").value.trim();
 var message = document.getElementById("message").value.trim();
 
-// Get error elements
 var nameError = document.getElementById("name-error");
 var emailError = document.getElementById("email-error");
 var subjectError = document.getElementById("subject-error");
 var messageError = document.getElementById("message-error");
 
-// Clear old messages
-
-36
 
 nameError.textContent = "";
 emailError.textContent = "";
@@ -24,7 +19,6 @@ messageError.textContent = "";
 
 var valid = true;
 
-// Name validation
 if (name === "") {
 nameError.textContent = "Please enter your name.";
 valid = false;
@@ -33,28 +27,23 @@ nameError.textContent = "Name must be 3–15 characters.";
 valid = false;
 }
 
-// Email validation
 if (email === "") {
 emailError.textContent = "Please enter your email.";
 valid = false;
 }
 
-// Subject validation (optional)
 if (subject !== "" && subject.length < 3) {
 subjectError.textContent = "Subject must be at least 3 characters.";
 valid = false;
 }
 
 37
-// Message validation (optional)
 if (message !== "" && message.length < 5) {
 messageError.textContent = "Message must be at least 5characters.";
 valid = false;
 }
 
-// If all valid
 if (valid) {
 alert("Form submitted successfully!");
-// e.target.submit(); // uncomment if you want real submission
 }
 });
