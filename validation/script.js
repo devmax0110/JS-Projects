@@ -36,8 +36,6 @@ if (subject !== "" && subject.length < 3) {
 subjectError.textContent = "Subject must be at least 3 characters.";
 valid = false;
 }
-
-37
 if (message !== "" && message.length < 5) {
 messageError.textContent = "Message must be at least 5characters.";
 valid = false;
